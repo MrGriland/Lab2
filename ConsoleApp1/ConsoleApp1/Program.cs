@@ -5,6 +5,24 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            int x = 9;
+            while (x!=0)
+            Console.WriteLine("Input number of task");
+            Convert.ToInt16(Console.ReadLine());
+            switch(x)
+            {
+                case 1: Taskone();
+                    break;
+                case 2: Tasktwo();
+                    break;
+                case 3: Taskthree();
+                    break;
+                default:
+                    return;
+            }
+        }
+        static void Taskone()
+        {
             bool q1 = true;
             byte q2 = 3;
             sbyte q3 = -3;
@@ -20,6 +38,15 @@ namespace ConsoleApp1
             ushort q13 = 223;
             string q14 = "afsafa";
             Console.WriteLine("{0}\n{1}\n{2}\n{3}\n{4}\n{5}\n{6}\n{7}\n{8}\n{9}\n{10}\n{11}\n{12}\n{13}", q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14);
+
+        }
+        static void Tasktwo()
+        {
+
+        }
+        static void Taskthree()
+        {
+
         }
     }
 }
