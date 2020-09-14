@@ -26,13 +26,58 @@ namespace ConsoleApp1
                         TaskFour();
                         break;
                     case 5:
-                        TaskFive();
+                        int[] ar6 = {3, 455, 22, 266, 18, 77, 57};
+                        string str8 = "Please";
+                        Console.WriteLine(TaskFive(ar6, str8));
                         break;
                     case 6:
-                        TaskSix();
+                        TaskSixFirst();
+                        TaskSixSecond();
                         break;
                     default:
                         return;
+                }
+            }
+            (int, int, int, char) TaskFive(int[] ar, string str)
+            {
+                int max, min, eq = 0;
+                max = min = ar[0];
+                foreach (int i in ar)
+                {
+                    if (i < min)
+                    {
+                        min = i;
+                    }
+                }
+                foreach (int i in ar)
+                {
+                    if (i > max)
+                    {
+                        max = i;
+                    }
+                }
+                foreach (int i in ar)
+                {
+                    eq += i;
+                }
+                (int, int, int, char) tuple3 = (max, min, eq, str[0]);
+                return tuple3;
+            }
+            void TaskSixFirst()
+            {
+                checked
+                {
+                    int ch = 2147483647;
+                    
+                    Console.WriteLine(ch);
+                }
+            } 
+            void TaskSixSecond()
+            {
+                unchecked
+                {
+                    int unch = 2147483647;
+                    Console.WriteLine(unch);
                 }
             }
         }
@@ -200,10 +245,6 @@ namespace ConsoleApp1
             {
                 Console.WriteLine("Кортеж 1 и кортеж 2 не равны");
             }
-        }
-        static void TaskFive()
-        {
-
         }
         static void TaskSix()
         {
