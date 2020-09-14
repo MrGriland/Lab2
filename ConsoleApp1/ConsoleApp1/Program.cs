@@ -65,10 +65,28 @@ namespace ConsoleApp1
             double? d1 = 3.3;
             var j = 3;
             //j = 0.34F;
+            int n = Convert.ToInt32(num5);
         }
         static void Tasktwo()
         {
-
+            if("gh" != "bb")
+            {
+                Console.WriteLine("Литералы");
+            }
+            string str1 = "legend is good";
+            string str2 = "glory dinner";
+            string str3 = "smell of victory";
+            string str4 = str1 + " " + str2;
+            Console.WriteLine(str4);
+            string str5 = String.Copy(str3);
+            Console.WriteLine(str3);
+            string str6 = str1.Substring(3, 3);
+            Console.WriteLine(str6);
+            String[] split = str1.Split(' ');
+            foreach (String s in split)
+            {
+                Console.WriteLine(s);
+            }
         }
         static void Taskthree()
         {
